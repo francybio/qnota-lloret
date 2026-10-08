@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Q'Nota · Cocina latina en Lloret de Mar</title>
+<meta name="description" content="Q'Nota, restaurante latino en Lloret de Mar: arepas, cachapas, tequeños, patacones, pabellón, bandeja paisa y sopas de domingo. Carrer de Valentí Almirall i Llozer, 5. Tel. 601 926 200.">
+<meta name="theme-color" content="#12100E">
+<meta property="og:title" content="Q'Nota · Sabores que te hacen viajar">
+<meta property="og:description" content="Cocina venezolana y latinoamericana en Lloret de Mar.">
+<meta property="og:image" content="assets/img/cachapa-oriental.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2312100E'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-weight='900' font-size='34' fill='%23F5C21B' text-anchor='middle'%3EQ%3C/text%3E%3Ccircle cx='50' cy='14' r='5' fill='%23D7262E'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Instrument+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ INTRO · el pasaporte ============ -->
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro__book">
+    <div class="intro__page">
+      <div class="stamp stamp--intro">
+        <span>Entrada</span>
+        <b>Lloret de Mar</b>
+        <span>Q'Nota · 13:00</span>
+      </div>
+    </div>
+    <div class="intro__cover">
+      <div class="intro__face">
+        <span class="intro__kicker">Pasaporte de sabores</span>
+        <svg class="intro__ring" viewBox="0 0 120 120" aria-hidden="true"><use href="#ringMark"/></svg>
+        <span class="intro__name">Q'Nota</span>
+        <span class="intro__kicker">Lloret de Mar · Latinoamérica</span>
+      </div>
+    </div>
+  </div>
+  <button class="intro__skip" type="button" tabindex="-1">Entrar</button>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="ringMark" viewBox="0 0 120 120">
+    <circle cx="60" cy="60" r="52" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 5"/>
+    <circle cx="60" cy="14" r="7" fill="#F5C21B"/><circle cx="92.5" cy="27.5" r="7" fill="#1F4FA8"/><circle cx="106" cy="60" r="7" fill="#D7262E"/>
+    <circle cx="92.5" cy="92.5" r="7" fill="#2F8F5B"/><circle cx="60" cy="106" r="7" fill="#74ACDF"/><circle cx="27.5" cy="92.5" r="7" fill="#F5C21B"/>
+    <circle cx="14" cy="60" r="7" fill="#D7262E"/><circle cx="27.5" cy="27.5" r="7" fill="#1F4FA8"/>
+    <text x="60" y="70" text-anchor="middle" font-family="Bricolage Grotesque, Arial" font-weight="800" font-size="30" fill="currentColor">Q'</text>
+  </symbol>
+</svg>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Q'Nota, inicio">
+    <svg class="brand__ring" viewBox="0 0 120 120" aria-hidden="true"><use href="#ringMark"/></svg>
+    <span>Q'Nota</span>
+  </a>
+  <nav class="nav__links" id="navLinks" aria-label="Principal">
+    <a href="#pasaporte">Pasaporte</a>
+    <a href="#carta">Carta</a>
+    <a href="#rockola">Rockola</a>
+    <a href="#postales">Postales</a>
+    <a href="#visita">Visítanos</a>
+  </nav>
+  <div class="nav__end">
+    <span class="live" data-live><i></i><span data-live-text>Horario</span></span>
+    <a class="btn btn--corn btn--sm" href="tel:+34601926200"><i class="ph ph-phone"></i><span>601 926 200</span></a>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Menú"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__copy">
+      <p class="eyebrow">Cocina latina · Lloret de Mar</p>
+      <h1 class="hero__title">
+        <span class="line"><span>Sabores que</span></span>
+        <span class="line"><span>te hacen</span></span>
+        <span class="line"><span><em>viajar</em></span></span>
+      </h1>
+      <div class="board" aria-label="Destinos de la carta">
+        <span class="board__label">Próximo destino</span>
+        <span class="board__flaps" id="flaps" aria-live="off"></span>
+      </div>
+      <div class="hero__cta">
+        <a class="btn btn--corn" href="#pasaporte"><i class="ph ph-airplane-tilt"></i><span>Empieza el viaje</span></a>
+        <a class="btn btn--line" href="#carta"><span>Ver la carta</span><i class="ph ph-arrow-down"></i></a>
+      </div>
+    </div>
+    <figure class="hero__media">
+      <div class="ticket">
+        <div class="ticket__head"><span>Q'Nota</span><span>LLM ✈ LAT</span></div>
+        <div class="ticket__frame">
+          <video class="hero__video" src="assets/video/local.mp4" poster="assets/img/poster-local.jpg" muted loop playsinline autoplay preload="metadata"></video>
+        </div>
+        <div class="ticket__foot">
+          <span><small>Puerta</small>Valentí Almirall, 5</span>
+          <span><small>Embarque</small>13:00</span>
+          <span><small>Asiento</small>Terraza</span>
+        </div>
+      </div>
+      <div class="seal" aria-label="4,6 de 5 en Google, 231 reseñas">
+        <svg viewBox="0 0 200 200" aria-hidden="true"><defs><path id="sealPath" d="M100 100 m-78 0 a78 78 0 1 1 156 0 a78 78 0 1 1 -156 0"/></defs><text><textPath href="#sealPath">· 231 reseñas en Google · auténtico sabor latino </textPath></text></svg>
+        <b>4,6</b><span>★★★★★</span>
+      </div>
+    </figure>
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Arepas</span><i></i><span>Cachapas</span><i></i><span>Tequeños</span><i></i><span>Patacones</span><i></i><span>Pabellón</span><i></i><span>Bandeja paisa</span><i></i><span>Arroz chaufa</span><i></i><span>Chivito</span><i></i><span>Trío de tacos</span><i></i><span>Hervido de gallina</span><i></i><span>Reina pepiada</span><i></i>
+        <span>Arepas</span><i></i><span>Cachapas</span><i></i><span>Tequeños</span><i></i><span>Patacones</span><i></i><span>Pabellón</span><i></i><span>Bandeja paisa</span><i></i><span>Arroz chaufa</span><i></i><span>Chivito</span><i></i><span>Trío de tacos</span><i></i><span>Hervido de gallina</span><i></i><span>Reina pepiada</span><i></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUÉ NOTA ============ -->
+  <section class="about" id="nosotros">
+    <div class="about__head">
+      <p class="eyebrow">¿Por qué Q'Nota?</p>
+      <h2 class="h2">En Venezuela, <em>«¡qué nota!»</em> se dice cuando algo está buenísimo.</h2>
+    </div>
+    <div class="about__grid">
+      <p class="about__text" data-words>Un espacio donde los sabores de Latinoamérica se celebran con pasión y autenticidad. Nuestra cocina mezcla tradición, sazón y cultura en cada plato, para que te sientas en casa, estés donde estés.</p>
+      <ul class="facts">
+        <li><b data-count="9">9</b><span>países en la carta</span></li>
+        <li><b data-count="40">40</b><span>platos numerados</span></li>
+        <li><b>4,6</b><span>en Google · 231 reseñas</span></li>
+        <li><b data-count="6">6</b><span>días a la semana</span></li>
+      </ul>
+    </div>
+    <div class="collage">
+      <figure class="collage__a" data-parallax="-8"><img src="assets/img/mesa-latina.jpg" alt="Mesa con empanadas, tequeños, arepitas y salsas" loading="lazy"></figure>
+      <figure class="collage__b" data-parallax="10"><img src="assets/img/sala.jpg" alt="El comedor de Q'Nota" loading="lazy"></figure>
+      <figure class="collage__c" data-parallax="-14"><img src="assets/img/cartel-banderas.jpg" alt="Cartel de Q'Nota con las banderas de Latinoamérica" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <!-- ============ PASAPORTE (interactivo) ============ -->
+  <section class="passport" id="pasaporte">
+    <div class="passport__head">
+      <p class="eyebrow eyebrow--ink">Interactivo · Tu pasaporte</p>
+      <h2 class="h2">Elige un país y <em>sella</em> tu pasaporte</h2>
+      <p class="lead">Nueve países conviven en la carta de Q'Nota. Toca una bandera: verás sus platos, con número y precio, y te llevarás el sello.</p>
+    </div>
+    <div class="flags" id="flags" role="tablist" aria-label="Países de la carta"></div>
+    <div class="book" id="book">
+      <div class="book__page book__page--left">
+        <div class="book__top"><span>Visados</span><span id="stampCount">0 / 9 sellos</span></div>
+        <div class="slots" id="slots"></div>
+        <p class="book__done" id="bookDone" hidden>¡Pasaporte completo! Ya eres de la casa.</p>
+      </div>
+      <div class="book__page book__page--right" id="bookRight" aria-live="polite">
+        <div class="visa" id="visa"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CARTA ============ -->
+  <section class="menu" id="carta">
+    <div class="menu__head">
+      <p class="eyebrow">La carta completa</p>
+      <h2 class="h2">40 platos, <em>numerados</em> como en sala</h2>
+      <label class="search"><i class="ph ph-magnifying-glass"></i><input id="menuSearch" type="search" placeholder="Busca: arepa, cachapa, sopa…" autocomplete="off"><span class="sr">Buscar en la carta</span></label>
+    </div>
+    <div class="tabs" id="menuTabs" role="tablist" aria-label="Secciones de la carta"></div>
+    <div class="menu__body" id="menuBody"></div>
+    <p class="menu__note"><i class="ph ph-info"></i> Precios de la carta en sala, IVA incluido. Pueden cambiar: confírmalos en el restaurante. Las sopas son de domingo. Pedidos a domicilio por <a href="https://glovoapp.com/es/es/lloret-de-mar/stores/qnota-lloret-de-mar" target="_blank" rel="noopener">Glovo</a>.</p>
+  </section>
+
+  <!-- ============ ROCKOLA (vídeos) ============ -->
+  <section class="rockola" id="rockola">
+    <div class="rockola__head">
+      <p class="eyebrow">Vídeos de nuestro Instagram</p>
+      <h2 class="h2">La <em>rockola</em> de Q'Nota</h2>
+      <p class="lead">Elige un tema: cada disco es un vídeo de la cocina, la mesa o la terraza. Con sonido, si te apetece.</p>
+    </div>
+    <div class="rockola__grid">
+      <ol class="tracks" id="tracks"></ol>
+      <div class="jukebox">
+        <div class="jukebox__arch">
+          <div class="jukebox__lights" aria-hidden="true"></div>
+          <div class="jukebox__screen">
+            <video id="jbVideo" muted playsinline preload="none"></video>
+            <span class="jukebox__now" id="jbNow"></span>
+          </div>
+        </div>
+        <div class="jukebox__deck">
+          <div class="vinyl" id="vinyl" aria-hidden="true"><span class="vinyl__label" id="vinylLabel">A1</span></div>
+          <div class="jukebox__ctrl">
+            <div class="progress"><i id="jbProgress"></i></div>
+            <div class="jukebox__btns">
+              <button type="button" id="jbPrev" aria-label="Tema anterior"><i class="ph ph-skip-back"></i></button>
+              <button type="button" id="jbPlay" class="is-main" aria-label="Pausar"><i class="ph ph-pause"></i></button>
+              <button type="button" id="jbNext" aria-label="Tema siguiente"><i class="ph ph-skip-forward"></i></button>
+              <button type="button" id="jbSound" aria-pressed="false" aria-label="Activar sonido"><i class="ph ph-speaker-slash"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ POSTALES (carrusel) ============ -->
+  <section class="cards" id="postales">
+    <div class="cards__head">
+      <p class="eyebrow eyebrow--ink">Fotos de Instagram y de nuestros clientes</p>
+      <h2 class="h2">Postales desde <em>la mesa</em></h2>
+      <div class="cards__nav">
+        <button type="button" id="cardsPrev" aria-label="Anteriores"><i class="ph ph-arrow-left"></i></button>
+        <button type="button" id="cardsNext" aria-label="Siguientes"><i class="ph ph-arrow-right"></i></button>
+      </div>
+    </div>
+    <div class="strip" id="strip" tabindex="0" aria-label="Carrusel de fotos; arrastra para ver más">
+      <div class="strip__track" id="stripTrack"></div>
+    </div>
+    <p class="cards__hint"><i class="ph ph-hand-grabbing"></i> Arrastra · toca una postal para ampliarla</p>
+  </section>
+
+  <!-- ============ RESEÑAS ============ -->
+  <section class="reviews">
+    <div class="reviews__score">
+      <b>4,6</b>
+      <span class="reviews__stars" aria-hidden="true">★★★★★</span>
+      <span>231 reseñas en Google</span>
+    </div>
+    <div class="quotes" id="quotes" aria-live="polite">
+      <blockquote class="quote is-on"><p>«Las bravas muy buenas, los tequeños de 10, empanadas y arepas súper ricas.»</p><cite>Reseña en Google</cite></blockquote>
+      <blockquote class="quote"><p>«El ambiente, comida y servicio excelentes. Las arepas están riquísimas y los jugos naturales, sin palabras.»</p><cite>Ivanna · Google</cite></blockquote>
+      <blockquote class="quote"><p>«Fuimos a cenar el fin de semana y estaba todo súper rico. Ya tenemos nuestro sitio de referencia en Lloret.»</p><cite>Aida · Google</cite></blockquote>
+      <blockquote class="quote"><p>«Porciones abundantes, servicio rápido y muy amable. Relación calidad-precio 10/10.»</p><cite>Reseña en Google</cite></blockquote>
+      <blockquote class="quote"><p>«Nos hicieron sentir muy a gusto, la comida deliciosa y amabilidad 10. Repetiremos sin duda.»</p><cite>Melissa · Google</cite></blockquote>
+    </div>
+    <div class="quotes__dots" id="quoteDots"></div>
+  </section>
+
+  <!-- ============ VISITA ============ -->
+  <section class="visit" id="visita">
+    <div class="visit__info">
+      <p class="eyebrow">Visítanos</p>
+      <h2 class="h2">Te esperamos en <em>Lloret</em></h2>
+      <div class="visit__status" data-live><i></i><span data-live-text>Consultando horario…</span></div>
+      <ul class="hours" id="hours">
+        <li data-day="1"><span>Lunes</span><span>13:00 – 23:00</span></li>
+        <li data-day="2"><span>Martes</span><span>13:00 – 23:00</span></li>
+        <li data-day="3"><span>Miércoles</span><span>Cerrado</span></li>
+        <li data-day="4"><span>Jueves</span><span>13:00 – 23:00</span></li>
+        <li data-day="5"><span>Viernes</span><span>13:00 – 23:00</span></li>
+        <li data-day="6"><span>Sábado</span><span>13:00 – 23:00</span></li>
+        <li data-day="0"><span>Domingo</span><span>13:00 – 23:00 · sopas</span></li>
+      </ul>
+      <address class="visit__addr">
+        <a href="https://maps.google.com/?q=Q'Nota,+Carrer+de+Valent%C3%AD+Almirall+i+Llozer,+5,+Lloret+de+Mar" target="_blank" rel="noopener"><i class="ph ph-map-pin"></i>Carrer de Valentí Almirall i Llozer, 5 · 17310 Lloret de Mar</a>
+        <a href="tel:+34601926200"><i class="ph ph-phone"></i>601 926 200</a>
+        <a href="https://www.instagram.com/qnotalloretdemar/" target="_blank" rel="noopener"><i class="ph ph-instagram-logo"></i>@qnotalloretdemar</a>
+        <a href="https://glovoapp.com/es/es/lloret-de-mar/stores/qnota-lloret-de-mar" target="_blank" rel="noopener"><i class="ph ph-moped"></i>A domicilio con Glovo</a>
+      </address>
+      <ul class="tags">
+        <li><i class="ph ph-sun"></i>Terraza</li>
+        <li><i class="ph ph-wheelchair"></i>Acceso adaptado</li>
+        <li><i class="ph ph-dog"></i>Se admiten perros</li>
+        <li><i class="ph ph-bag"></i>Para llevar</li>
+      </ul>
+    </div>
+    <div class="visit__map">
+      <iframe title="Mapa: Q'Nota en Lloret de Mar" src="https://maps.google.com/maps?q=Q'Nota%2C%20Carrer%20de%20Valent%C3%AD%20Almirall%20i%20Llozer%205%2C%20Lloret%20de%20Mar&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <img class="visit__photo" src="assets/img/terraza.jpg" alt="Terraza de Q'Nota con banderas" loading="lazy">
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p class="foot__big">¡Qué <em>nota</em>!</p>
+  <div class="foot__row">
+    <span>Q'Nota · Cocina latina · Lloret de Mar</span>
+    <span>Fotos y vídeos: Instagram @qnotalloretdemar y reseñas de Google</span>
+  </div>
+</footer>
+
+<!-- visor -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+  <button class="lb__close" type="button" aria-label="Cerrar"><i class="ph ph-x"></i></button>
+  <figure class="lb__fig"><img alt=""><figcaption></figcaption></figure>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
